@@ -1,0 +1,120 @@
+
+
+
+<html>
+<head>
+	<title>Midterm CALCULATOR Ortega Danilo</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div>
+	<div>
+		<input type="text" id="num">
+		<table class="isbog">
+			<tr>
+				<td><button onclick= "seven()">7</button></td>
+			
+				<td><button onclick="eight()">8</button></td>
+			
+				<td><button onclick="nine()">9</button></td>
+
+				<td><button onclick="plus()">+</button></td>
+			</tr>
+			<tr>
+				<td><button onclick="four()">4</button></td>
+			
+				<td><button onclick="five()">5</button></td>
+			
+				<td><button onclick="six()">6</button></td>
+			
+				<td><button onclick="minus()">-</button></td>
+
+			</tr>
+			<tr>
+				<td><button onclick="one()">1</button></td>
+			
+				<td><button onclick="two()">2</button></td>
+			
+				<td><button onclick="three()">3</button></td>
+		
+				<td><button onclick="multiply()">*</button></td>
+
+			</tr>
+			<tr>
+				<td><button onclick="cancel()">CA</button></td>
+			
+				<td><button onclick="zero()">0</button></td>
+			
+				<td><button onclick="equals()">=</button></td>
+		
+				<td><button onclick="divide()">/</button></td>
+
+			</tr>
+		</table>
+	</div>
+</div>
+
+<script type="text/javascript">
+	let n2 = 0;
+	var operator = 0;
+
+	function one(){
+		document.getElementsById("num").value += 1;
+	}
+	function two(){
+		document.getElementsById("num").value += 2;
+	} 
+	function three(){
+		document.getElementsById("num").value += 3;
+	}
+	function four(){
+		document.getElementsById("num").value += 4;
+	}
+	function five(){
+		document.getElementsById("num").value += 5;
+	}
+	function six(){
+		document.getElementsById("num").value += 6;
+	}
+	function seven(){
+		document.getElementsById("num").value += 7;
+	}
+	function eight(){
+		document.getElementsById("num").value += 8;
+	}
+	function nine(){
+		document.getElementsById("num").value += 9;
+	}
+	function zero(){
+		document.getElementsById("num").value += 0;
+	}
+
+
+	function equals(){
+		let n1 = document.getElementbyId("num").value;
+		if(parseInt(operator) == 1){
+			let n1 = document.getElementbyId("num").value;
+			document.getElementById("num").value = parseInt("n1") + parseInt("n2");
+		}
+		else if(parseInt(operator) == 2){
+			let n1 = document.getElementbyId("num").value;
+			document.getElementById("num").value = parseInt("n1") - parseInt("n2");
+		}
+	
+		else if(parseInt(operator) ==3){
+			let n1 = document.getElementbyId("num").value;
+			document.getElementById("num").value = parseInt("n1") * parseInt("n2");
+		}
+		else if(parseInt(operator) == 4){
+			let n1 = document.getElementbyId("num").value;
+			document.getElementById("num").value = parseInt("n1") / parseInt("n2");
+		}
+	}	
+	
+
+
+</script>
+
+</body>
+</html>
